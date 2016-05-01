@@ -1,0 +1,22 @@
+{
+  "name": "javascript-project-starter",
+  "version": "0.0.1",
+  "description": "A bare-bones foundation to build JavaScript projects on.",
+  "author": "BJ Anderson (http://www.bjspage.com/)",
+  "license": "MIT",
+  "private": true,
+  "config": {
+    "browsersyncPort": 10080,
+    "expressPort": 20080
+  },
+  "scripts": {
+    "postinstall": "npm outdated",
+    "serve:build": "SERVE_DIRECTORY=dist npm start",
+    "start": "nodemon --watch server/ server/devServer.js"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.12.5",
+    "express": "^4.13.4",
+    "nodemon": "^1.9.2"
+  }
+}
